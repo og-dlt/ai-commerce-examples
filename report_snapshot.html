@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agentic Commerce Examples - Snapshot</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 24px;
+        color: #1f2937;
+        background: #f9fafb;
+      }
+      h1 {
+        margin-bottom: 8px;
+      }
+      .meta {
+        color: #4b5563;
+        margin-bottom: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 14px;
+      }
+      .tags {
+        font-size: 12px;
+        color: #374151;
+        margin-bottom: 8px;
+      }
+      .small {
+        font-size: 12px;
+        color: #6b7280;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-20</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">5aa2d657-f7ee-459e-bc4a-1eca1215f082</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-20, 44VPN2QJSYTK-1298187675-20</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body>
+    <h1>Public Agentic Commerce Examples</h1>
+    <div class="meta" id="meta"></div>
+    <div class="grid" id="grid"></div>
+
+    <script>
+      const payload = {
+        "generated_at_utc": "2026-04-01T07:51:53Z",
+        "count": 2,
+        "query": "Public examples of agents that buy/compare/negotiate for consumers in US/Europe.",
+        "examples": [
+          {
+            "organization": "Billshark",
+            "organization_home": "https://www.billshark.com/",
+            "source_url": "https://www.billshark.com/",
+            "source_title": "Lower Your Bill: Our Sharks Can Save You Money | Billshark",
+            "terms_url": "https://www.billshark.com/terms-of-service",
+            "region": "US",
+            "category": "telco",
+            "summary": "Lower Your Bill: Our Sharks Can Save You Money | Billshark x Billshark home page overview. Billshark is a bill negotiation service focused on helping people lower recurring monthly bills. The home page explains that Billshark negotiates better rates for internet, wireless, cable, phone, subscriptions, and other eligible recurring services.",
+            "evidence_snippet": "The home page explains that Billshark negotiates better rates for internet, wireless, cable, phone, subscriptions, and other eligible recurring services.",
+            "scraped_at_utc": "2026-04-01T07:51:41Z"
+          },
+          {
+            "organization": "Klarna",
+            "organization_home": "https://www.klarna.com/",
+            "source_url": "https://www.klarna.com/us/blog/our-ai-assistant-is-here/",
+            "source_title": "Klarna newsroom",
+            "terms_url": "https://www.klarna.com/us/terms-and-conditions/",
+            "region": "US/EU",
+            "category": "retail",
+            "summary": "Klarna newsroom content highlights AI-related shopping and discovery updates in public-facing communications.",
+            "evidence_snippet": "Klarna newsroom... Stay updated with the latest news, announcements and insights.",
+            "scraped_at_utc": "2026-04-01T07:51:49Z"
+          }
+        ]
+      };
+
+      const metaEl = document.getElementById("meta");
+      const gridEl = document.getElementById("grid");
+
+      metaEl.textContent = `Generated: ${payload.generated_at_utc} | Examples: ${payload.count}`;
+
+      gridEl.innerHTML = payload.examples.map((item) => `
+        <article class="card">
+          <h3>${item.organization}</h3>
+          <div class="tags">${item.category.toUpperCase()} - ${item.region}</div>
+          <p>${item.summary}</p>
+          <p class="small"><strong>Evidence:</strong> ${item.evidence_snippet}</p>
+          <p class="small">
+            <a href="${item.source_url}" target="_blank" rel="noreferrer">Source</a>
+            ${item.terms_url ? ` - <a href="${item.terms_url}" target="_blank" rel="noreferrer">Terms</a>` : ""}
+          </p>
+        </article>
+      `).join("");
+    </script>
+  </body>
+</html>

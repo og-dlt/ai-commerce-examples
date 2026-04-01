@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Commerce Examples</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --ink: #10243e;
+        --muted: #607286;
+        --line: #d8e2ef;
+        --brand-1: #123b6b;
+        --brand-2: #1f5b98;
+        --card: #ffffff;
+        --hover: #edf3fb;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .hero {
+        background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+        color: #fff;
+        border-radius: 14px;
+        padding: 30px;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.2;
+      }
+      .hero p {
+        margin: 10px 0 0;
+        color: #e5eef9;
+        max-width: 900px;
+        font-size: 17px;
+      }
+      .stats {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        gap: 10px;
+      }
+      .stat {
+        padding: 10px 12px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+      }
+      .stat .k {
+        font-size: 12px;
+        color: #dbe8f7;
+      }
+      .stat .v {
+        margin-top: 2px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .controls {
+        margin-top: 18px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .filter-btn {
+        border: 1px solid var(--line);
+        background: var(--card);
+        color: var(--ink);
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: var(--hover);
+        border-color: #b8cbe2;
+      }
+      .layout {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 14px;
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        min-height: 560px;
+      }
+      .panel-header {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .case-list {
+        max-height: 700px;
+        overflow: auto;
+      }
+      .group-title {
+        padding: 10px 14px 6px;
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #4b6280;
+        background: #f7faff;
+        border-top: 1px solid #edf2f8;
+      }
+      .case-item {
+        padding: 12px 14px;
+        border-bottom: 1px solid #edf2f8;
+        cursor: pointer;
+      }
+      .case-item:hover {
+        background: var(--hover);
+      }
+      .case-item.active {
+        background: #e9f1fb;
+      }
+      .company {
+        font-size: 17px;
+        margin: 0;
+      }
+      .small {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .detail {
+        padding: 18px;
+      }
+      .detail h2 {
+        margin: 0 0 8px;
+        font-size: 30px;
+      }
+      .sub {
+        font-size: 18px;
+        color: var(--brand-1);
+        margin: 0 0 12px;
+      }
+      .badges {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      .badge {
+        border: 1px solid #c9d8ea;
+        background: #f3f8ff;
+        color: #19466f;
+        border-radius: 999px;
+        padding: 4px 9px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .block {
+        margin-top: 12px;
+      }
+      .block h3 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        color: #173b60;
+      }
+      .block p {
+        margin: 0;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      a {
+        color: #1b4e84;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        margin-top: 14px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      @media (max-width: 980px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .panel {
+          min-height: auto;
+        }
+        .stats {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
+    </style>
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-25</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">557c7163-2e06-4df0-bbf1-e00315aa7ef2</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-25, 44VPN2QJSYTK-1298187675-25</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <h1>AI Commerce: Consumer Examples of Agents That Compare, Recommend, and Buy</h1>
+        <p>
+          Curated public-web examples across retail and consumer services, focused on
+          agentic flows where AI helps people compare options, reduce costs, and complete commerce decisions.
+        </p>
+        <div class="stats" id="stats"></div>
+      </section>
+
+      <div class="controls" id="filters"></div>
+
+      <section class="layout">
+        <aside class="panel">
+          <div class="panel-header" id="listMeta">Loading examples...</div>
+          <div class="case-list" id="caseList"></div>
+        </aside>
+        <article class="panel">
+          <div class="detail" id="caseDetail">
+            <p>Loading case details...</p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        Examples compiled from public web sources; descriptions summarize publicly available evidence.
+      </footer>
+    </div>
+
+    <script>
+      const FILTERS = ["All", "Retail", "Telecom", "Payments", "Travel", "Other"];
+      let allExamples = [];
+      let visibleExamples = [];
+      let activeFilter = "All";
+      let activeIndex = 0;
+
+      const statsEl = document.getElementById("stats");
+      const filtersEl = document.getElementById("filters");
+      const listMetaEl = document.getElementById("listMeta");
+      const caseListEl = document.getElementById("caseList");
+      const caseDetailEl = document.getElementById("caseDetail");
+
+      const esc = (v) =>
+        String(v ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+
+      const short = (txt, max = 100) => {
+        const val = String(txt || "");
+        return val.length > max ? `${val.slice(0, max - 1)}...` : val;
+      };
+
+      function renderStats(payload) {
+        const total = payload.summary?.total_examples ?? allExamples.length;
+        const sectors = (payload.summary?.sectors_covered || []).length;
+        const live = payload.summary?.status_breakdown?.live ?? 0;
+        const pilotAnnounced =
+          (payload.summary?.status_breakdown?.pilot ?? 0) +
+          (payload.summary?.status_breakdown?.announced ?? 0) +
+          (payload.summary?.status_breakdown?.demo ?? 0);
+        statsEl.innerHTML = `
+          <div class="stat"><div class="k">Total examples</div><div class="v">${total}</div></div>
+          <div class="stat"><div class="k">Sectors covered</div><div class="v">${sectors}</div></div>
+          <div class="stat"><div class="k">Live</div><div class="v">${live}</div></div>
+          <div class="stat"><div class="k">Pilot / Announced</div><div class="v">${pilotAnnounced}</div></div>
+        `;
+      }
+
+      function renderFilters() {
+        filtersEl.innerHTML = FILTERS.map(
+          (f) =>
+            `<button class="filter-btn ${f === activeFilter ? "active" : ""}" data-filter="${f}">${f}</button>`
+        ).join("");
+        filtersEl.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            activeFilter = btn.getAttribute("data-filter");
+            activeIndex = 0;
+            applyFilter();
+            renderFilters();
+          });
+        });
+      }
+
+      function applyFilter() {
+        visibleExamples =
+          activeFilter === "All"
+            ? [...allExamples]
+            : allExamples.filter((x) => x.sector_filter === activeFilter);
+        renderList();
+        renderDetail();
+      }
+
+      function renderList() {
+        listMetaEl.textContent = `${visibleExamples.length} case examples (${activeFilter})`;
+        if (!visibleExamples.length) {
+          caseListEl.innerHTML = `<div class="case-item"><p class="small">No examples in this filter.</p></div>`;
+          return;
+        }
+
+        const grouped = {};
+        visibleExamples.forEach((item, idx) => {
+          const k = item.sector_filter || "Other";
+          if (!grouped[k]) grouped[k] = [];
+          grouped[k].push({ item, idx });
+        });
+        const orderedGroups = ["Retail", "Telecom", "Payments", "Travel", "Other"];
+        const htmlBlocks = [];
+        orderedGroups.forEach((g) => {
+          const rows = grouped[g] || [];
+          if (!rows.length) return;
+          htmlBlocks.push(`<div class="group-title">${esc(g)}</div>`);
+          rows.forEach(({ item, idx }) => {
+            htmlBlocks.push(`
+              <div class="case-item ${idx === activeIndex ? "active" : ""}" data-idx="${idx}">
+                <p class="company">${esc(item.company)}</p>
+                <div class="small">${esc(item.product_or_agent_name)} - ${esc(item.status)}</div>
+              </div>
+            `);
+          });
+        });
+        caseListEl.innerHTML = htmlBlocks.join("");
+
+        caseListEl.querySelectorAll(".case-item").forEach((el) => {
+          el.addEventListener("click", () => {
+            activeIndex = Number(el.getAttribute("data-idx") || "0");
+            renderList();
+            renderDetail();
+          });
+        });
+      }
+
+      function renderDetail() {
+        if (!visibleExamples.length) {
+          caseDetailEl.innerHTML = "<p>No case selected.</p>";
+          return;
+        }
+        const item = visibleExamples[Math.max(0, Math.min(activeIndex, visibleExamples.length - 1))];
+        caseDetailEl.innerHTML = `
+          <h2>${esc(item.company)}</h2>
+          <p class="sub">${esc(item.product_or_agent_name)}</p>
+          <div class="badges">
+            <span class="badge">${esc(item.sector_filter)}</span>
+            <span class="badge">${esc(item.status.toUpperCase())}</span>
+            <span class="badge">${esc(item.geography)}</span>
+            <span class="badge">Relevance ${esc(item.relevance_score)}</span>
+          </div>
+          <div class="block">
+            <h3>Description</h3>
+            <p>${esc(item.description)}</p>
+          </div>
+          <div class="block">
+            <h3>What The Agent Does</h3>
+            <p>${esc(item.what_the_agent_does_for_the_consumer)}</p>
+          </div>
+          <div class="block">
+            <h3>Why It Matters</h3>
+            <p>${esc(item.why_it_is_relevant_to_ai_commerce)}</p>
+          </div>
+          <div class="block">
+            <h3>Evidence Summary</h3>
+            <p>${esc(short(item.evidence_summary, 420))}</p>
+          </div>
+          <div class="block">
+            <h3>Source</h3>
+            <p><a href="${esc(item.source_url)}" target="_blank" rel="noreferrer">${esc(item.source_title || item.source_url)}</a></p>
+            <p class="small">${esc(item.source_type)}${item.date_if_available ? " - " + esc(item.date_if_available) : ""}</p>
+            ${item.notes ? `<p class="small">Note: ${esc(item.notes)}</p>` : ""}
+          </div>
+        `;
+      }
+
+      async function init() {
+        try {
+          const response = await fetch("./data/ai_commerce_examples.json");
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const payload = await response.json();
+          allExamples = payload.examples || [];
+          renderStats(payload);
+          renderFilters();
+          applyFilter();
+        } catch (error) {
+          listMetaEl.textContent = "Failed to load examples";
+          caseListEl.innerHTML = `<div class="case-item"><p class="small">Could not load data/ai_commerce_examples.json. Run the builder script first.</p></div>`;
+          caseDetailEl.innerHTML = `<p class="small">Run: <code>python3 build_ai_commerce_report.py</code> then open this page via local server.</p>`;
+          console.error(error);
+        }
+      }
+
+      init();
+    </script>
+  </body>
+</html>

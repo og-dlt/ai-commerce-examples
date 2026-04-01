@@ -1,0 +1,245 @@
+{
+  "generated_at_utc": "2026-04-01T08:16:28Z",
+  "count": 14,
+  "query": "Public examples of agents that buy/compare/negotiate for consumers in US/Europe.",
+  "examples": [
+    {
+      "organization": "Billshark",
+      "organization_home": "https://www.billshark.com/",
+      "source_url": "https://www.billshark.com/",
+      "source_title": "Lower Your Bill: Our Sharks Can Save You Money | Billshark",
+      "terms_url": "https://www.billshark.com/terms-of-service",
+      "region": "US",
+      "category": "telco",
+      "summary": " Lower Your Bill: Our Sharks Can Save You Money | Billshark Billshark home page overview Billshark is a bill negotiation service focused on helping people lower recurring monthly bills without changing the way the home page looks for sighted users. The home page explains that Billshark negotiates better rates for internet, wireless, cable, phone, subscriptions, and other eligible recurring services. It highlights a s",
+      "evidence_snippet": "The home page explains that Billshark negotiates better rates for internet, wireless, cable, phone, subscriptions, and other eligible recurring services.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:14:42Z"
+    },
+    {
+      "organization": "Trim",
+      "organization_home": "https://www.asktrim.com/",
+      "source_url": "https://www.asktrim.com/how-it-works/",
+      "source_title": "Trim by OneMain | Save Money Automagically",
+      "terms_url": "https://www.asktrim.com/terms",
+      "region": "US",
+      "category": "telco",
+      "summary": " Trim by OneMain | Save Money Automagically // This implementation is due to an incompatibility between turbolinks and facebook. // Conveniently enough, there's a solution here: // http://reed.github.io/turbolinks-compatibility/facebook.html Trim How It Works Security Sign In Sign Up How It Works Security Sign In Sign Up Something went wrong The page didn t load correctly. You may refresh the page or try again later.",
+      "evidence_snippet": " Trim by OneMain | Save Money Automagically // This implementation is due to an incompatibility between turbolinks and facebook.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:14:53Z"
+    },
+    {
+      "organization": "Klarna",
+      "organization_home": "https://www.klarna.com/",
+      "source_url": "https://www.klarna.com/us/blog/our-ai-assistant-is-here/",
+      "source_title": "Klarna newsroom",
+      "terms_url": "https://www.klarna.com/us/terms-and-conditions/",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Klarna newsroom Discover Klarna For Business Investor relations Corporate governance ESG Sustainability News About us Show more Continue in app Klarna newsroom Stay updated with the latest news, announcements and insights. Press contact For media inquiries, email press@klarna.com. For questions on an order, visit customer service . Email us Press kit Want to use our branding? Check out our press kit for logos, produ",
+      "evidence_snippet": " Klarna newsroom Discover Klarna For Business Investor relations Corporate governance ESG Sustainability News About us Show more Continue in app Klarna newsroom Stay updated with the latest news, announcements and insights.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:14:59Z"
+    },
+    {
+      "organization": "Microsoft Copilot Shopping Deals",
+      "organization_home": "https://www.microsoft.com/",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/general-ai/find-online-deals-with-copilot-shopping",
+      "source_title": "Find Online Deals with Copilot Shopping | Microsoft Copilot",
+      "terms_url": "https://www.microsoft.com/en-us/servicesagreement",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Find Online Deals with Copilot Shopping | Microsoft Copilot Skip to main content Microsoft Copilot Copilot Copilot Home Get started How to get Copilot Features Try free version of Copilot Products Copilot on Windows New: Copilot Mode in Edge Copilot Labs Resources Students Privacy &amp; security Do more with Copilot AI art prompting guide Copilot blog For organizations More All Microsoft Global Microsoft 365 Azure C",
+      "evidence_snippet": " Find Online Deals with Copilot Shopping | Microsoft Copilot Skip to main content Microsoft Copilot Copilot Copilot Home Get started How to get Copilot Features Try free version of Copilot Products Copilot on Windows New: Copilot Mode in Edge Copilot Labs Resources Students Privacy &amp; security Do more with Copilot AI art prompting guide Copilot blog For organizations More All Microsoft Global Microsoft 365 Azure Copilot Windows Surface Xbox Deals Small Business Support Software Software Windows Apps Outlook OneDrive Microsoft Teams OneNote Microsoft Edge Moving from Skype to Teams PCs &amp; Devices PCs &amp; Devices Computers Shop Xbox Accessories VR &amp; mixed reality Certified Refurbished Trade-in for cash Entertainment Entertainment Xbox Game Pass Ultimate PC Game Pass Xbox games PC games Business Business Microsoft AI Microsoft Security Dynamics 365 Microsoft 365 for business Microsoft Power Platform Windows 365 Small Business Digital Sovereignty Developer &amp; IT Developer &amp; IT Azure Microsoft Developer Microsoft Learn Support for AI marketplace apps Microsoft Tech Community Microsoft Marketplace Marketplace Rewards Visual Studio Other Other Microsoft Rewards Free downloads &amp; security Education Gift cards Licensing Unlocked stories View Sitemap Search Search or ask a question No results Cancel 0 Cart 0 items in shopping cart Sign in Home General AI Find Online Deals with Copilot Shopping MAY 08, 2025 4 MIN READ Copilot Shopping: The smarter, faster way to find great online deals Ever searched for a product online and felt immediately overwhelmed by the deluge of ads and related products.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:04Z"
+    },
+    {
+      "organization": "Microsoft Copilot Shopping Assistant",
+      "organization_home": "https://www.microsoft.com/",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/shop-smarter-with-an-ai-shopping-assistant",
+      "source_title": "Shop Smarter with an AI Shopping Assistant | Microsoft Copilot",
+      "terms_url": "https://www.microsoft.com/en-us/servicesagreement",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Shop Smarter with an AI Shopping Assistant | Microsoft Copilot Skip to main content Microsoft Copilot Copilot Copilot Home Get started How to get Copilot Features Try free version of Copilot Products Copilot on Windows New: Copilot Mode in Edge Copilot Labs Resources Students Privacy &amp; security Do more with Copilot AI art prompting guide Copilot blog For organizations More All Microsoft Global Microsoft 365 Azur",
+      "evidence_snippet": " Shop Smarter with an AI Shopping Assistant | Microsoft Copilot Skip to main content Microsoft Copilot Copilot Copilot Home Get started How to get Copilot Features Try free version of Copilot Products Copilot on Windows New: Copilot Mode in Edge Copilot Labs Resources Students Privacy &amp; security Do more with Copilot AI art prompting guide Copilot blog For organizations More All Microsoft Global Microsoft 365 Azure Copilot Windows Surface Xbox Deals Small Business Support Software Software Windows Apps Outlook OneDrive Microsoft Teams OneNote Microsoft Edge Moving from Skype to Teams PCs &amp; Devices PCs &amp; Devices Computers Shop Xbox Accessories VR &amp; mixed reality Certified Refurbished Trade-in for cash Entertainment Entertainment Xbox Game Pass Ultimate PC Game Pass Xbox games PC games Business Business Microsoft AI Microsoft Security Dynamics 365 Microsoft 365 for business Microsoft Power Platform Windows 365 Small Business Digital Sovereignty Developer &amp; IT Developer &amp; IT Azure Microsoft Developer Microsoft Learn Support for AI marketplace apps Microsoft Tech Community Microsoft Marketplace Marketplace Rewards Visual Studio Other Other Microsoft Rewards Free downloads &amp; security Education Gift cards Licensing Unlocked stories View Sitemap Search Search or ask a question No results Cancel 0 Cart 0 items in shopping cart Sign in Home Daily Life Shop Smarter with an AI Shopping Assistant MARCH 11, 2026 4 MIN READ Shop smarter with Copilot: your AI shopping assistant Shopping should be fun.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:09Z"
+    },
+    {
+      "organization": "Google Shopping AI Update",
+      "organization_home": "https://blog.google/",
+      "source_url": "https://blog.google/products/shopping/google-shopping-ai-update-october-2024",
+      "source_title": "The new Google Shopping is rebuilt with AI",
+      "terms_url": "https://policies.google.com/terms",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " The new Google Shopping is rebuilt with AI Skip to main content The Keyword Google Shopping s getting a big transformation Share x.com Facebook LinkedIn Mail Copy link Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more:",
+      "evidence_snippet": " The new Google Shopping is rebuilt with AI Skip to main content The Keyword Google Shopping s getting a big transformation Share x.com Facebook LinkedIn Mail Copy link Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Products &amp; platforms Products &amp; platforms Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Company news Company news Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Feed Subscribe Global (English) Africa (English) Australia (English) Brasil (Portugu s) Canada (English) Canada (Fran ais) esko ( e tina) Deutschland (Deutsch) Espa a (Espa ol) France (Fran ais) India (English) Indonesia (Bahasa Indonesia) Italia (Italiano) ( ) ( ) Latinoam rica (Espa ol) ( ) MENA (English) Nederlands (Nederland) New Zealand (English) Polska (Polski) Portugal (Portugu s) Sverige (Svenska) ( ) T rkiye (T rk e) ( ) [&quot;How is Gemini changing Maps?&quot;, &quot;What is \\&quot;vibe design?\\&quot;&quot;, &quot;How can I learn new AI skills?&quot;] Subscribe The Keyword Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Products &amp; platforms Products &amp; platforms Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Company news Company news Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Feed Images RSS feed Subscribe Breadcrumb Products &amp; Platforms Products Shopping Google Shopping s getting a big transformation Oct 15, 2024 Share x.com Facebook LinkedIn Mail Copy link Find exactly what you need, browse personalized options and get the lowest prices all on the new Google Shopping.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:14Z"
+    },
+    {
+      "organization": "Google Shopping Best Prices",
+      "organization_home": "https://blog.google/",
+      "source_url": "https://www.blog.google/products/shopping/find-best-prices-and-places-buy-google-shopping/",
+      "source_title": "Find the best prices and places to buy with Google Shopping",
+      "terms_url": "https://policies.google.com/terms",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Find the best prices and places to buy with Google Shopping Skip to main content The Keyword Find the best prices and places to buy with Google Shopping Share x.com Facebook LinkedIn Mail Copy link Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Go",
+      "evidence_snippet": " Find the best prices and places to buy with Google Shopping Skip to main content The Keyword Find the best prices and places to buy with Google Shopping Share x.com Facebook LinkedIn Mail Copy link Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Products &amp; platforms Products &amp; platforms Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Company news Company news Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Feed Subscribe Global (English) Africa (English) Australia (English) Brasil (Portugu s) Canada (English) Canada (Fran ais) esko ( e tina) Deutschland (Deutsch) Espa a (Espa ol) France (Fran ais) India (English) Indonesia (Bahasa Indonesia) Italia (Italiano) ( ) ( ) Latinoam rica (Espa ol) ( ) MENA (English) Nederlands (Nederland) New Zealand (English) Polska (Polski) Portugal (Portugu s) Sverige (Svenska) ( ) T rkiye (T rk e) ( ) [&quot;How is Gemini changing Maps?&quot;, &quot;What is \\&quot;vibe design?\\&quot;&quot;, &quot;How can I learn new AI skills?&quot;] Subscribe The Keyword Home Innovation &amp; AI Innovation &amp; AI Models &amp; Research Google DeepMind Google Research Google Labs Gemini models See all Products Developer tools Gemini app See all Infrastructure &amp; cloud Global network Google Cloud See all Learn more: Google DeepMind blog Google Research blog Google Developers blog Google Cloud blog See all AI updates Products &amp; platforms Products &amp; platforms Products Search Maps Chrome Google Workspace Learning &amp; Education Photos Shopping See all Platforms Android Google Play Wear OS See all Devices Pixel Google Nest Fitbit Chromebooks See all Learn more: Google Ads &amp; Commerce blog Waze blog See all product updates Company news Company news Outreach &amp; initiatives Creating opportunity Safety &amp; security Google.org Public policy Sustainability Health See all Leadership Sundar Pichai, CEO More authors See all Inside Google Around the globe Life at Google See all Feed Images RSS feed Subscribe Breadcrumb Products &amp; Platforms Products Shopping Find the best prices and places to buy with Google Shopping Oct 03, 2019 Share x.com Facebook LinkedIn Mail Copy link Surojit Chatterjee Vice President, Product Management, Shopping Share x.com Facebook LinkedIn Mail Copy link When shopping for something, the web is a seemingly endless source of ideas, products and choices.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:20Z"
+    },
+    {
+      "organization": "Meta Shopping AI",
+      "organization_home": "https://about.fb.com/",
+      "source_url": "https://about.fb.com/news/2021/06/advancing-ai-to-make-shopping-easier-for-everyone/",
+      "source_title": "Advancing AI to Make Shopping Easier For Everyone",
+      "terms_url": "https://www.facebook.com/legal/terms",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Advancing AI to Make Shopping Easier For Everyone Skip to content Viewing this site in English Portugese German French Japanese Korean Spanish (LTAM) Spanish (ES) Voc est visualizando este site em Ingl s Portugu s Alem o Franc s Japon s Coreano Espanhol (LTAM) Espanhol (ES) Diese Seite anzeigen auf Englisch Portugiesisch Deutsch Franz sisch Japanisch Koreanisch Spanisch (LTAM) Spanisch (ES) Vous consultez ce site en",
+      "evidence_snippet": " Advancing AI to Make Shopping Easier For Everyone Skip to content Viewing this site in English Portugese German French Japanese Korean Spanish (LTAM) Spanish (ES) Voc est visualizando este site em Ingl s Portugu s Alem o Franc s Japon s Coreano Espanhol (LTAM) Espanhol (ES) Diese Seite anzeigen auf Englisch Portugiesisch Deutsch Franz sisch Japanisch Koreanisch Spanisch (LTAM) Spanisch (ES) Vous consultez ce site en Anglais Portugais Allemand Fran ais Japonais Cor en Espagnol (LTAM) Espagnol (ES) (LTAM) (ES) (LTAM) (ES) Este sitio se est viendo en Ingl s Portugu s Alem n Franc s Japon s Coreano Espa ol (LTAM) Espa ol (ES) Este sitio se est viendo en Ingl s Portugu s Alem n Franc s Japon s Coreano Espa ol (LTAM) Espa ol (ES) Dismiss locale prompt Meta AI glasses Menu Menu Back Meta Quest Menu Menu Back Explore Meta Menu Menu Back Support Help Center Newsroom Explore About AI glasses Ray-Ban Meta Oakley Meta Vanguard Oakley Meta HSTN Meta Ray-Ban Display Compare glasses Shop Shop all glasses Certified refurbished Prescription Explore About AI glasses Ray-Ban Meta Oakley Meta Vanguard Oakley Meta HSTN Meta Ray-Ban Display Compare glasses Shop Shop all glasses Certified refurbished Prescription Ray-Ban Meta Shop Wayfarer (Gen 2) Oakley Meta Shop Vanguard Meta Ray-Ban Display Learn More Meta Quest Meta Quest overview Meta Quest 3s Meta Quest 3 Compare devices Accessories Accessories Play now.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:36Z"
+    },
+    {
+      "organization": "Meta Marketplace AI Tools",
+      "organization_home": "https://about.fb.com/",
+      "source_url": "https://about.fb.com/news/2026/03/facebook-marketplace-new-meta-ai-tools-make-selling-faster-and-easier/",
+      "source_title": "Facebook Marketplace&#039;s New Meta AI Tools Make Selling Faster and Easier",
+      "terms_url": "https://www.facebook.com/legal/terms",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Facebook Marketplace&#039;s New Meta AI Tools Make Selling Faster and Easier Skip to content Viewing this site in English Portugese German French Japanese Korean Spanish (LTAM) Spanish (ES) Voc est visualizando este site em Ingl s Portugu s Alem o Franc s Japon s Coreano Espanhol (LTAM) Espanhol (ES) Diese Seite anzeigen auf Englisch Portugiesisch Deutsch Franz sisch Japanisch Koreanisch Spanisch (LTAM) Spanisch (ES",
+      "evidence_snippet": " Facebook Marketplace&#039;s New Meta AI Tools Make Selling Faster and Easier Skip to content Viewing this site in English Portugese German French Japanese Korean Spanish (LTAM) Spanish (ES) Voc est visualizando este site em Ingl s Portugu s Alem o Franc s Japon s Coreano Espanhol (LTAM) Espanhol (ES) Diese Seite anzeigen auf Englisch Portugiesisch Deutsch Franz sisch Japanisch Koreanisch Spanisch (LTAM) Spanisch (ES) Vous consultez ce site en Anglais Portugais Allemand Fran ais Japonais Cor en Espagnol (LTAM) Espagnol (ES) (LTAM) (ES) (LTAM) (ES) Este sitio se est viendo en Ingl s Portugu s Alem n Franc s Japon s Coreano Espa ol (LTAM) Espa ol (ES) Este sitio se est viendo en Ingl s Portugu s Alem n Franc s Japon s Coreano Espa ol (LTAM) Espa ol (ES) Dismiss locale prompt Meta AI glasses Menu Menu Back Meta Quest Menu Menu Back Explore Meta Menu Menu Back Support Help Center Newsroom Explore About AI glasses Ray-Ban Meta Oakley Meta Vanguard Oakley Meta HSTN Meta Ray-Ban Display Compare glasses Shop Shop all glasses Certified refurbished Prescription Explore About AI glasses Ray-Ban Meta Oakley Meta Vanguard Oakley Meta HSTN Meta Ray-Ban Display Compare glasses Shop Shop all glasses Certified refurbished Prescription Ray-Ban Meta Shop Wayfarer (Gen 2) Oakley Meta Shop Vanguard Meta Ray-Ban Display Learn More Meta Quest Meta Quest overview Meta Quest 3s Meta Quest 3 Compare devices Accessories Accessories Play now.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:42Z"
+    },
+    {
+      "organization": "Expedia ChatGPT Planning",
+      "organization_home": "https://www.expediagroup.com/",
+      "source_url": "https://expediagroup.com/investors/news-and-events/financial-releases/news/news-details/2023/Chatgpt-Wrote-This-Press-Release--No-It-Didnt-But-It-Can-Now-Assist-With-Travel-Planning-In-The-Expedia-App/default.aspx",
+      "source_title": "Expedia Group",
+      "terms_url": "https://www.expediagroup.com/who-we-are/legal/default.aspx",
+      "region": "US/EU",
+      "category": "travel",
+      "summary": " Expedia Group Skip to main content Skip to main content Who We Are Travel With Us Partner With Us Investors Legal Media Careers Who We Are Our Story Leadership Impact &amp; Sustainability Inclusion &amp; Diversity Corporate Standards Marketplace Policies Travel With Us Partner With Us Open World Accelerator Alumni 2023: Accessibility and Inclusion Investors Investors Overview News &amp; Events News Investor Events F",
+      "evidence_snippet": " Expedia Group Skip to main content Skip to main content Who We Are Travel With Us Partner With Us Investors Legal Media Careers Who We Are Our Story Leadership Impact &amp; Sustainability Inclusion &amp; Diversity Corporate Standards Marketplace Policies Travel With Us Partner With Us Open World Accelerator Alumni 2023: Accessibility and Inclusion Investors Investors Overview News &amp; Events News Investor Events Financial Information Quarterly Results Annual Reports and Proxies SEC Filings Stock Information Stock Quote Stock Chart Historical Stock Quote Dividend History Analyst Coverage Corporate Governance Governance Documents Leadership Committee Composition Contact the Board Resources Investor FAQs U.S.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:15:57Z"
+    },
+    {
+      "organization": "KAYAK AI Lab",
+      "organization_home": "https://www.kayak.com/",
+      "source_url": "https://www.kayak.com/news/introducing-kayak-ai/",
+      "source_title": "KAYAK.ai: Introducing our travel test lab",
+      "terms_url": "https://www.kayak.com/terms",
+      "region": "US/EU",
+      "category": "travel",
+      "summary": " KAYAK.ai: Introducing our travel test lab Skip to main content Travel Hacker Blog Home Travel inspiration Ready for a getaway but not sure where to start? The right travel inspiration makes planning your next adventure a breeze. From vibrant cities to secluded beaches, KAYAK helps you discover it all. Explore our guides to uncover the best vacation destinations. Discover all Ready for a getaway but not sure where to",
+      "evidence_snippet": " KAYAK.ai: Introducing our travel test lab Skip to main content Travel Hacker Blog Home Travel inspiration Ready for a getaway but not sure where to start.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:16:03Z"
+    },
+    {
+      "organization": "KAYAK AI Mode",
+      "organization_home": "https://www.kayak.com/",
+      "source_url": "https://www.kayak.com/news/ai-mode/",
+      "source_title": "KAYAK introduces AI mode.",
+      "terms_url": "https://www.kayak.com/terms",
+      "region": "US/EU",
+      "category": "travel",
+      "summary": " KAYAK introduces AI mode. Skip to main content Travel Hacker Blog Home Travel inspiration Ready for a getaway but not sure where to start? The right travel inspiration makes planning your next adventure a breeze. From vibrant cities to secluded beaches, KAYAK helps you discover it all. Explore our guides to uncover the best vacation destinations. Discover all Ready for a getaway but not sure where to start? The righ",
+      "evidence_snippet": "Skip to main content Travel Hacker Blog Home Travel inspiration Ready for a getaway but not sure where to start.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:16:08Z"
+    },
+    {
+      "organization": "Comparor AI Assistant",
+      "organization_home": "https://finance.yahoo.com/",
+      "source_url": "https://finance.yahoo.com/news/comparor-launches-ai-shopping-assistant-121600135.html",
+      "source_title": "Comparor Launches AI Shopping Assistant to Simplify Online Shopping and Real-Time Price Comparison",
+      "terms_url": "https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html",
+      "region": "US/EU",
+      "category": "retail",
+      "summary": " Comparor Launches AI Shopping Assistant to Simplify Online Shopping and Real-Time Price Comparison Oops, something went wrong Skip to navigation Skip to main content Skip to right column Yahoo Finance News Finance Sports More News Today's news US Politics World Weather Climate change Health Science Originals Newsletters Games Life Health Parenting Horoscopes Shopping Food Travel Autos Gift ideas Buying guides Amazon",
+      "evidence_snippet": " Comparor Launches AI Shopping Assistant to Simplify Online Shopping and Real-Time Price Comparison Oops, something went wrong Skip to navigation Skip to main content Skip to right column Yahoo Finance News Finance Sports More News Today's news US Politics World Weather Climate change Health Science Originals Newsletters Games Life Health Parenting Horoscopes Shopping Food Travel Autos Gift ideas Buying guides Amazon Spring Sale deals Amazon Spring Sale tech deals Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Finance My portfolio News Markets Research Community Personal finance Videos Sports March Madness 2026 College basketball Fantasy NFL NBA MLB NHL College football Soccer Yahoo Sports AM New on Yahoo Yahoo Scout Creators Tech Local Sign in My Portfolio News Latest Originals Newsletters Stock market Crypto Earnings Tariffs Tax Insights via H&amp;R Block More Topics Economies Tech Housing Markets Stocks Most active Day gainers Day losers Trending Highest dividend Small cap Large cap Most expensive Highest beta Pink sheet Unusual volume Crypto Most active Day gainers Day losers Prediction markets Finance Crypto Equities Earnings Tech Economy Private companies 52 week gainers Recently funded Most funded Options Day gainers Day losers Highest open interest Highest implied volatility Sectors Technology Financial services Consumer cyclical Communication services Healthcare Industrials Consumer defensive Energy Basic materials Real estate Utilities Treasury bonds Futures Currencies World indices ETFs Research Screeners Stocks Most shorted Most active penny stocks Analyst strong buy Calendar Earnings Stock splits IPOs Economic events Stock comparison NVDA vs INTC NVDA vs AMD GOOG vs AMZN AAPL vs MSFT TSLA vs RIVN Currency converter Advanced charts Community Personal Finance My Money BETA Credit cards Compare Credit Cards Best 0% APR cards Best balance transfer cards Best rewards cards Best travel cards Banking Best CD rates Best high-yield savings accounts Best money market accounts Best free checking accounts Best online banks Mortgage Best mortgage lenders Lowest mortgage rates Mortgage refinance First time homebuyer Mortgage payment calculator Home affordability calculator Insurance Find car insurance Types of car insurance Find life insurance Taxes How to file Tax brackets and rates Child tax credit Tax extension Tax refund status Student loans Federal vs.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:16:18Z"
+    },
+    {
+      "organization": "Goji Mobile ChatBarry",
+      "organization_home": "https://www.gojimobile.com/",
+      "source_url": "https://www.gojimobile.com/blog/meet-chatbarry",
+      "source_title": "Meet ChatBarry: The AI Matchmaker for Phone Plans - Goji Mobile",
+      "terms_url": "https://www.gojimobile.com/terms-conditions",
+      "region": "EU",
+      "category": "telco",
+      "summary": " Meet ChatBarry: The AI Matchmaker for Phone Plans - Goji Mobile Need Help? Ask Barry. Phones Get Started Should I Upgrade? Protect Your Device Plans Budget-Friendly Family Plans Hidden Gems Compare All Plans Travel eSIMS Deals Trending Phone Deals Trending Plan Discounts Browse All Deals &amp; Promos Resources Tips &amp; Guides Support About Goji Why Goji? How It Works FAQ About Blog See All Plans GET THE APP Meet C",
+      "evidence_snippet": "How It Works FAQ About Blog See All Plans GET THE APP Meet ChatBarry: The AI Matchmaker for Phone Plans Cami Shimp Published: September 28, 2024 Updated on: July 16, 2024 Are you ready to fall in love with your phone plan.",
+      "compliance": {
+        "public_page": true,
+        "robots_checked": true,
+        "terms_review_note": "Publicly accessible page; confirm legal interpretation manually."
+      },
+      "scraped_at_utc": "2026-04-01T08:16:24Z"
+    }
+  ]
+}
