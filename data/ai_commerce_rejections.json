@@ -1,62 +1,21 @@
 {
-  "generated_at_utc": "2026-04-01T12:06:39.815137+00:00",
-  "rejected_count": 8,
+  "generated_at_utc": "2026-04-01T14:22:34.835901+00:00",
+  "rejected_count": 3,
   "rejections": [
     {
-      "company": "Instacart",
-      "product_or_agent_name": "Ask Instacart",
-      "source_url": "https://www.instacart.com/company/updates/bringing-inspirational-ai-powered-search-to-the-instacart-app-with-ask-instacart",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
+      "company": "Pinduoduo",
+      "reason": "insufficient proof of agentic or commerce relevance",
+      "detail": "Public evidence reviewed was mainly hiring activity, not a clearly validated consumer AI agent workflow."
     },
     {
-      "company": "Expedia",
-      "product_or_agent_name": "ChatGPT Trip Planning in App",
-      "source_url": "https://expediagroup.com/investors/news-and-events/financial-releases/news/news-details/2023/Chatgpt-Wrote-This-Press-Release--No-It-Didnt-But-It-Can-Now-Assist-With-Travel-Planning-In-The-Expedia-App/default.aspx",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
+      "company": "Generic Instagram live auction claims",
+      "reason": "too speculative",
+      "detail": "Could not validate strong public evidence of AI-agent-led live-auction purchase execution."
     },
     {
-      "company": "Billshark",
-      "product_or_agent_name": "Bill Negotiation Service",
-      "source_url": "https://www.billshark.com/",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
-    },
-    {
-      "company": "Pine AI",
-      "product_or_agent_name": "Lower Your Bills",
-      "source_url": "https://www.19pine.ai/feature/lower-your-bills",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
-    },
-    {
-      "company": "Comparor",
-      "product_or_agent_name": "AI Shopping Assistant",
-      "source_url": "https://finance.yahoo.com/news/comparor-launches-ai-shopping-assistant-121600135.html",
-      "reason": "weak_evidence",
-      "detail": "Required terms for this case were not detected on page."
-    },
-    {
-      "company": "OpenAI",
-      "product_or_agent_name": "Shopping Research in ChatGPT",
-      "source_url": "https://openai.com/index/chatgpt-shopping-research/",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
-    },
-    {
-      "company": "Perplexity",
-      "product_or_agent_name": "Buy with Pro",
-      "source_url": "https://www.reuters.com/technology/artificial-intelligence/ai-startup-perplexity-adds-shopping-features-search-competition-tightens-2024-11-18/",
-      "reason": "fetch_error",
-      "detail": "HTTP error: 401"
-    },
-    {
-      "company": "TikTok Shop",
-      "product_or_agent_name": "Live Discovery Commerce Workflows",
-      "source_url": "https://newsroom.tiktok.com/tiktok-shop-is-where-shoppers-come-to-discover?lang=en",
-      "reason": "robots_disallow",
-      "detail": "Blocked by robots policy or robots was unavailable."
+      "company": "General telco support chatbots",
+      "reason": "generic chatbot only",
+      "detail": "Excluded where no clear comparison, switching, optimization, or transaction impact was documented."
     }
   ]
 }
