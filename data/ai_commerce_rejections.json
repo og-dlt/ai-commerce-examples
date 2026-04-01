@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-01T14:22:34.835901+00:00",
+  "generated_at_utc": "2026-04-01T14:46:35.417587+00:00",
   "rejected_count": 3,
   "rejections": [
     {
@@ -10,7 +10,7 @@
     {
       "company": "Generic Instagram live auction claims",
       "reason": "too speculative",
-      "detail": "Could not validate strong public evidence of AI-agent-led live-auction purchase execution."
+      "detail": "No strong public proof of AI-agent-led transaction execution."
     },
     {
       "company": "General telco support chatbots",

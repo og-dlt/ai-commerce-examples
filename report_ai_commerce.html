@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI Commerce Strategic Landscape</title>
+    <title>AI Commerce Delegation Landscape</title>
     <style>
       :root {
         --bg: #f4f7fb;
         --ink: #10243e;
-        --muted: #5d7086;
-        --line: #d6e0ec;
-        --panel: #ffffff;
-        --blue-1: #123b6b;
-        --blue-2: #1f5b98;
-        --blue-3: #eaf2fb;
+        --muted: #5f7186;
+        --line: #d7e1ee;
+        --card: #ffffff;
+        --brand-1: #123b6b;
+        --brand-2: #1f5b98;
+        --brand-3: #eaf2fb;
         --hover: #eef4fc;
       }
       * {
@@ -31,26 +31,27 @@
         padding: 24px;
       }
       .hero {
-        background: linear-gradient(115deg, var(--blue-1), var(--blue-2));
-        color: #fff;
+        background: linear-gradient(115deg, var(--brand-1), var(--brand-2));
         border-radius: 14px;
+        color: #fff;
         padding: 28px;
       }
-      h1 {
+      .hero h1 {
         margin: 0;
         font-size: 34px;
         line-height: 1.2;
       }
       .hero p {
         margin: 10px 0 0;
+        color: #e6eef8;
         max-width: 980px;
-        color: #e8f0fa;
         font-size: 17px;
+        line-height: 1.4;
       }
       .metrics {
         margin-top: 14px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(130px, 1fr));
+        grid-template-columns: repeat(4, minmax(120px, 1fr));
         gap: 10px;
       }
       .metric {
@@ -64,42 +65,41 @@
         color: #d9e6f5;
       }
       .metric .v {
-        margin-top: 3px;
-        font-size: 20px;
+        margin-top: 2px;
+        font-size: 21px;
         font-weight: 700;
       }
-      .tabs {
+      .stage-tabs {
         margin-top: 16px;
         display: flex;
         gap: 8px;
         flex-wrap: wrap;
       }
-      .tab {
+      .stage-tab {
         border: 1px solid var(--line);
-        border-radius: 999px;
-        background: var(--panel);
+        background: var(--card);
         color: var(--ink);
-        cursor: pointer;
+        border-radius: 999px;
         padding: 8px 12px;
         font-size: 13px;
+        cursor: pointer;
       }
-      .tab.active,
-      .tab:hover {
-        background: var(--blue-3);
-        border-color: #b8cade;
+      .stage-tab.active,
+      .stage-tab:hover {
+        background: var(--brand-3);
       }
-      .section-intro {
+      .stage-intro {
         margin-top: 12px;
-        background: var(--panel);
         border: 1px solid var(--line);
+        background: var(--card);
         border-radius: 12px;
         padding: 14px 16px;
       }
-      .section-title {
+      .stage-intro h2 {
         margin: 0;
-        font-size: 21px;
+        font-size: 22px;
       }
-      .section-desc {
+      .stage-intro p {
         margin: 8px 0 0;
         color: var(--muted);
         line-height: 1.45;
@@ -113,11 +113,10 @@
       .filter {
         border: 1px solid var(--line);
         border-radius: 999px;
-        background: var(--panel);
-        color: var(--ink);
-        cursor: pointer;
+        background: var(--card);
         padding: 6px 10px;
         font-size: 12px;
+        cursor: pointer;
       }
       .filter.active,
       .filter:hover {
@@ -126,53 +125,44 @@
       .layout {
         margin-top: 12px;
         display: grid;
-        grid-template-columns: 380px 1fr;
+        grid-template-columns: 390px 1fr;
         gap: 12px;
       }
       .panel {
-        background: var(--panel);
         border: 1px solid var(--line);
+        background: var(--card);
         border-radius: 12px;
         min-height: 620px;
       }
       .panel-head {
-        padding: 10px 12px;
         border-bottom: 1px solid var(--line);
+        padding: 10px 12px;
         color: var(--muted);
         font-size: 13px;
       }
-      .list {
+      .case-list {
         max-height: 760px;
         overflow: auto;
       }
-      .bucket {
-        padding: 9px 12px 5px;
-        font-size: 11px;
-        letter-spacing: 0.05em;
-        color: #415d7c;
-        text-transform: uppercase;
-        background: #f7faff;
-        border-top: 1px solid #ecf2f9;
-      }
-      .item {
+      .case-item {
+        border-bottom: 1px solid #edf2f8;
         padding: 11px 12px;
-        border-bottom: 1px solid #edf2f7;
         cursor: pointer;
       }
-      .item:hover {
+      .case-item:hover {
         background: var(--hover);
       }
-      .item.active {
-        background: var(--blue-3);
+      .case-item.active {
+        background: var(--brand-3);
       }
-      .item h4 {
+      .case-item h3 {
         margin: 0;
         font-size: 16px;
       }
-      .item p {
-        margin: 3px 0 0;
-        font-size: 12px;
+      .case-item p {
+        margin: 4px 0 0;
         color: var(--muted);
+        font-size: 12px;
       }
       .detail {
         padding: 16px;
@@ -182,37 +172,37 @@
         font-size: 30px;
       }
       .detail .sub {
-        margin: 6px 0 10px;
-        color: var(--blue-1);
+        margin: 5px 0 10px;
+        color: var(--brand-1);
         font-size: 18px;
       }
       .badges {
         display: flex;
-        gap: 7px;
+        gap: 8px;
         flex-wrap: wrap;
         margin-bottom: 12px;
       }
       .badge {
-        background: #f1f6fd;
-        border: 1px solid #c8d8eb;
+        border: 1px solid #c8d7ea;
+        background: #f1f7fd;
         color: #1a4872;
         border-radius: 999px;
-        font-size: 11px;
         padding: 3px 9px;
+        font-size: 11px;
         font-weight: 700;
       }
       .block {
         margin-top: 11px;
       }
-      .block h3 {
+      .block h4 {
         margin: 0 0 5px;
-        font-size: 15px;
         color: #173f67;
+        font-size: 15px;
       }
       .block p {
         margin: 0;
-        font-size: 15px;
         line-height: 1.45;
+        font-size: 15px;
       }
       a {
         color: #1f4f80;
@@ -223,15 +213,15 @@
       }
       footer {
         margin-top: 12px;
-        font-size: 12px;
         color: var(--muted);
+        font-size: 12px;
       }
-      @media (max-width: 1020px) {
+      @media (max-width: 1024px) {
         .layout {
           grid-template-columns: 1fr;
         }
         .metrics {
-          grid-template-columns: repeat(2, minmax(130px, 1fr));
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
         }
       }
       @media (max-width: 640px) {
@@ -240,30 +230,30 @@
         }
       }
     </style>
-  
+
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-112</mso:_dlc_DocId>
-<mso:_dlc_DocIdItemGuid msdt:dt="string">fcc92078-7200-4768-8509-3c89aadc0625</mso:_dlc_DocIdItemGuid>
-<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-112, 44VPN2QJSYTK-1298187675-112</mso:_dlc_DocIdUrl>
+<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-126</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9be7ee7d-aef3-4b2f-aa6b-d0334d8a6bfe</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-126, 44VPN2QJSYTK-1298187675-126</mso:_dlc_DocIdUrl>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
   <body>
     <div class="container">
       <section class="hero">
-        <h1>AI Commerce: Consumer Examples of Agents That Compare, Recommend, and Buy</h1>
-        <p id="topFraming">
-          AI Commerce is developing along multiple paths: AI reshaping product buying journeys, AI helping households optimize recurring expenses, and regional models led by Asia’s ecosystem-first innovation.
+        <h1>AI Commerce Delegation Landscape</h1>
+        <p id="heroText">
+          AI Commerce is evolving in four stages: advising and comparing, acting with permission, completing transactions, and managing purchases over time.
         </p>
         <div class="metrics" id="metrics"></div>
       </section>
 
-      <div class="tabs" id="sectionTabs"></div>
+      <div class="stage-tabs" id="stageTabs"></div>
 
-      <section class="section-intro">
-        <h2 class="section-title" id="sectionTitle">Loading...</h2>
-        <p class="section-desc" id="sectionIntro">Loading section narrative...</p>
+      <section class="stage-intro">
+        <h2 id="stageTitle">Loading stage...</h2>
+        <p id="stageIntro">Loading editorial intro...</p>
       </section>
 
       <div class="filters" id="filters"></div>
@@ -271,10 +261,10 @@
       <section class="layout">
         <aside class="panel">
           <div class="panel-head" id="listMeta">Loading examples...</div>
-          <div class="list" id="list"></div>
+          <div class="case-list" id="caseList"></div>
         </aside>
         <article class="panel">
-          <div class="detail" id="detail">
+          <div class="detail" id="detailPanel">
             <p>Loading case details...</p>
           </div>
         </article>
@@ -286,38 +276,30 @@
     </div>
 
     <script>
-      const SECTION_CONFIG = {
-        retail_behavior: {
-          label: "Retail examples where AI Commerce is already changing how consumers purchase goods",
-          short: "Retail behavior",
-        },
-        recurring_expense_agents_europe: {
-          label: "European suppliers that today focus on agents for consumers to optimize their recurrent expenses",
-          short: "Europe recurring expenses",
-        },
-        asia_innovations: {
-          label: "Asian AI Commerce innovations reshaping shopping and consumer services",
-          short: "Asia innovations",
-        },
+      const STAGES = {
+        advises_and_compares: "1. AI that advises and AI that compares",
+        acts_with_permission: "2. AI that acts with permission",
+        completes_transactions: "3. AI that completes transactions",
+        manages_purchases_over_time: "4. AI that manages purchases over time",
       };
 
-      const GEO_FILTERS = ["All geographies", "Europe", "Asia", "North America", "Global"];
       let payload = null;
-      let activeSection = "retail_behavior";
+      let activeStage = "advises_and_compares";
       let activeGeo = "All geographies";
-      let activeDelegation = "All delegation";
+      let activeSector = "All sectors";
+      let activeStatus = "All status";
       let visible = [];
-      let activeIndex = 0;
+      let selectedIndex = 0;
 
       const metricsEl = document.getElementById("metrics");
-      const tabsEl = document.getElementById("sectionTabs");
-      const sectionTitleEl = document.getElementById("sectionTitle");
-      const sectionIntroEl = document.getElementById("sectionIntro");
+      const stageTabsEl = document.getElementById("stageTabs");
+      const stageTitleEl = document.getElementById("stageTitle");
+      const stageIntroEl = document.getElementById("stageIntro");
       const filtersEl = document.getElementById("filters");
       const listMetaEl = document.getElementById("listMeta");
-      const listEl = document.getElementById("list");
-      const detailEl = document.getElementById("detail");
-      const topFramingEl = document.getElementById("topFraming");
+      const caseListEl = document.getElementById("caseList");
+      const detailPanelEl = document.getElementById("detailPanel");
+      const heroTextEl = document.getElementById("heroText");
 
       const esc = (v) =>
         String(v ?? "")
@@ -325,75 +307,79 @@
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;");
 
-      const short = (v, m = 180) => {
-        const t = String(v || "");
-        return t.length > m ? `${t.slice(0, m - 1)}...` : t;
-      };
+      const uniq = (arr) => [...new Set(arr)].filter(Boolean);
 
       function renderMetrics() {
-        const summary = payload.summary || {};
+        const sum = payload.summary || {};
         metricsEl.innerHTML = `
-          <div class="metric"><div class="k">Total examples</div><div class="v">${summary.total_examples || 0}</div></div>
-          <div class="metric"><div class="k">Sections</div><div class="v">${Object.keys(summary.sections || {}).length}</div></div>
-          <div class="metric"><div class="k">Live examples</div><div class="v">${summary.status_breakdown?.live || 0}</div></div>
-          <div class="metric"><div class="k">Regions covered</div><div class="v">${(summary.regions_covered || []).length}</div></div>
+          <div class="metric"><div class="k">Total examples</div><div class="v">${sum.total_examples || 0}</div></div>
+          <div class="metric"><div class="k">Stages</div><div class="v">${Object.keys(sum.stages || {}).length}</div></div>
+          <div class="metric"><div class="k">Live examples</div><div class="v">${sum.status_breakdown?.live || 0}</div></div>
+          <div class="metric"><div class="k">Geographies</div><div class="v">${(sum.geographies_covered || []).length}</div></div>
         `;
       }
 
-      function renderTabs() {
-        tabsEl.innerHTML = Object.entries(SECTION_CONFIG)
+      function renderStageTabs() {
+        stageTabsEl.innerHTML = Object.entries(STAGES)
           .map(
-            ([key, cfg]) =>
-              `<button class="tab ${key === activeSection ? "active" : ""}" data-section="${key}">${esc(cfg.short)}</button>`
+            ([k, label]) =>
+              `<button class="stage-tab ${k === activeStage ? "active" : ""}" data-stage="${k}">${esc(label)}</button>`
           )
           .join("");
-        tabsEl.querySelectorAll(".tab").forEach((btn) => {
+        stageTabsEl.querySelectorAll(".stage-tab").forEach((btn) => {
           btn.addEventListener("click", () => {
-            activeSection = btn.getAttribute("data-section");
-            activeIndex = 0;
-            renderTabs();
-            renderSectionFrame();
+            activeStage = btn.getAttribute("data-stage");
+            selectedIndex = 0;
+            renderStageTabs();
+            renderStageHeader();
             applyFilters();
           });
         });
       }
 
-      function renderSectionFrame() {
-        sectionTitleEl.textContent = SECTION_CONFIG[activeSection].label;
-        sectionIntroEl.textContent = payload.section_intros?.[activeSection] || "";
+      function renderStageHeader() {
+        stageTitleEl.textContent = STAGES[activeStage];
+        stageIntroEl.textContent = payload.stage_intros?.[activeStage] || "";
       }
 
       function renderFilters() {
-        const delegationFilters = [
-          "All delegation",
-          "advisory",
-          "comparison",
-          "recommendation",
-          "action_with_approval",
-          "managed_execution",
-        ];
+        const cases = payload.examples || [];
+        const geos = ["All geographies", ...uniq(cases.map((c) => c.geography))];
+        const sectors = ["All sectors", ...uniq(cases.map((c) => c.sector))];
+        const statuses = ["All status", ...uniq(cases.map((c) => c.status))];
 
-        const geoBtns = GEO_FILTERS.map(
-          (g) => `<button class="filter ${g === activeGeo ? "active" : ""}" data-geo="${esc(g)}">${esc(g)}</button>`
-        ).join("");
-        const delBtns = delegationFilters.map(
-          (d) => `<button class="filter ${d === activeDelegation ? "active" : ""}" data-del="${esc(d)}">${esc(d)}</button>`
-        ).join("");
+        const geoBtns = geos
+          .map((x) => `<button class="filter ${x === activeGeo ? "active" : ""}" data-geo="${esc(x)}">${esc(x)}</button>`)
+          .join("");
+        const sectorBtns = sectors
+          .map((x) => `<button class="filter ${x === activeSector ? "active" : ""}" data-sector="${esc(x)}">${esc(x)}</button>`)
+          .join("");
+        const statusBtns = statuses
+          .map((x) => `<button class="filter ${x === activeStatus ? "active" : ""}" data-status="${esc(x)}">${esc(x)}</button>`)
+          .join("");
 
-        filtersEl.innerHTML = `<div>${geoBtns}</div><div>${delBtns}</div>`;
+        filtersEl.innerHTML = `${geoBtns}${sectorBtns}${statusBtns}`;
 
         filtersEl.querySelectorAll("[data-geo]").forEach((btn) => {
           btn.addEventListener("click", () => {
             activeGeo = btn.getAttribute("data-geo");
-            activeIndex = 0;
+            selectedIndex = 0;
             renderFilters();
             applyFilters();
           });
         });
-        filtersEl.querySelectorAll("[data-del]").forEach((btn) => {
+        filtersEl.querySelectorAll("[data-sector]").forEach((btn) => {
           btn.addEventListener("click", () => {
-            activeDelegation = btn.getAttribute("data-del");
-            activeIndex = 0;
+            activeSector = btn.getAttribute("data-sector");
+            selectedIndex = 0;
+            renderFilters();
+            applyFilters();
+          });
+        });
+        filtersEl.querySelectorAll("[data-status]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            activeStatus = btn.getAttribute("data-status");
+            selectedIndex = 0;
             renderFilters();
             applyFilters();
           });
@@ -401,47 +387,37 @@
       }
 
       function applyFilters() {
-        const all = payload.examples || [];
-        visible = all.filter((e) => {
-          if (e.section !== activeSection) return false;
-          if (activeGeo !== "All geographies" && !String(e.region || "").includes(activeGeo)) return false;
-          if (activeDelegation !== "All delegation" && e.delegation_level !== activeDelegation) return false;
+        visible = (payload.examples || []).filter((c) => {
+          if (c.stage_of_delegation !== activeStage) return false;
+          if (activeGeo !== "All geographies" && c.geography !== activeGeo) return false;
+          if (activeSector !== "All sectors" && c.sector !== activeSector) return false;
+          if (activeStatus !== "All status" && c.status !== activeStatus) return false;
           return true;
         });
-        renderList();
+        renderCaseList();
         renderDetail();
       }
 
-      function renderList() {
-        listMetaEl.textContent = `${visible.length} examples in section`;
+      function renderCaseList() {
+        listMetaEl.textContent = `${visible.length} examples in this stage`;
         if (!visible.length) {
-          listEl.innerHTML = `<div class="item"><p class="small">No examples match this filter.</p></div>`;
+          caseListEl.innerHTML = `<div class="case-item"><p>No examples match the selected filters.</p></div>`;
           return;
         }
-
-        const groups = {};
-        visible.forEach((e, idx) => {
-          const b = e.subsection_or_bucket || "Other";
-          if (!groups[b]) groups[b] = [];
-          groups[b].push({ e, idx });
-        });
-        const blocks = [];
-        Object.keys(groups).forEach((bucket) => {
-          blocks.push(`<div class="bucket">${esc(bucket)}</div>`);
-          groups[bucket].forEach(({ e, idx }) => {
-            blocks.push(`
-              <div class="item ${idx === activeIndex ? "active" : ""}" data-idx="${idx}">
-                <h4>${esc(e.company)}</h4>
-                <p>${esc(e.product_or_agent_name)} - ${esc(e.country)} - ${esc(e.status)}</p>
+        caseListEl.innerHTML = visible
+          .map(
+            (c, i) => `
+              <div class="case-item ${i === selectedIndex ? "active" : ""}" data-idx="${i}">
+                <h3>${esc(c.company)}</h3>
+                <p>${esc(c.product_or_agent_name)} - ${esc(c.market)} - ${esc(c.status)}</p>
               </div>
-            `);
-          });
-        });
-        listEl.innerHTML = blocks.join("");
-        listEl.querySelectorAll(".item[data-idx]").forEach((el) => {
+            `
+          )
+          .join("");
+        caseListEl.querySelectorAll(".case-item[data-idx]").forEach((el) => {
           el.addEventListener("click", () => {
-            activeIndex = Number(el.getAttribute("data-idx") || "0");
-            renderList();
+            selectedIndex = Number(el.getAttribute("data-idx") || "0");
+            renderCaseList();
             renderDetail();
           });
         });
@@ -449,66 +425,66 @@
 
       function renderDetail() {
         if (!visible.length) {
-          detailEl.innerHTML = "<p>No case selected.</p>";
+          detailPanelEl.innerHTML = "<p>No case selected.</p>";
           return;
         }
-        const e = visible[Math.max(0, Math.min(activeIndex, visible.length - 1))];
-        detailEl.innerHTML = `
-          <h2>${esc(e.company)}</h2>
-          <p class="sub">${esc(e.product_or_agent_name)}</p>
+        const c = visible[Math.max(0, Math.min(selectedIndex, visible.length - 1))];
+        detailPanelEl.innerHTML = `
+          <h2>${esc(c.company)}</h2>
+          <p class="sub">${esc(c.product_or_agent_name)}</p>
           <div class="badges">
-            <span class="badge">${esc(e.sector)}</span>
-            <span class="badge">${esc(e.region)} - ${esc(e.country)}</span>
-            <span class="badge">${esc(e.status.toUpperCase())}</span>
-            <span class="badge">${esc(e.delegation_level)}</span>
-            <span class="badge">${esc(e.shopping_journey_stage)}</span>
-          </div>
-
-          <div class="block">
-            <h3>What The Agent Does</h3>
-            <p>${esc(e.what_the_agent_does)}</p>
+            <span class="badge">${esc(c.stage_of_delegation)}</span>
+            <span class="badge">${esc(c.sector)}</span>
+            <span class="badge">${esc(c.geography)}</span>
+            <span class="badge">${esc(c.status.toUpperCase())}</span>
+            <span class="badge">${esc(c.recurring_vs_non_recurring)}</span>
           </div>
           <div class="block">
-            <h3>How It Changes Buying Behavior</h3>
-            <p>${esc(e.buying_behavior_impact)}</p>
+            <h4>Concise Description</h4>
+            <p>${esc(c.concise_description)}</p>
           </div>
           <div class="block">
-            <h3>Why It Matters</h3>
-            <p>${esc(e.why_it_matters)}</p>
+            <h4>What the AI does</h4>
+            <p>${esc(c.what_the_ai_does)}</p>
           </div>
           <div class="block">
-            <h3>Consumer Outcomes</h3>
-            <p>${esc((e.consumer_outcome || []).join(", "))}</p>
+            <h4>Customer task delegated</h4>
+            <p>${esc(c.consumer_task_delegated)}</p>
           </div>
           <div class="block">
-            <h3>Evidence Summary</h3>
-            <p>${esc(short(e.evidence_summary, 420))}</p>
+            <h4>Why this belongs in this stage</h4>
+            <p>${esc(c.why_this_stage)}</p>
           </div>
           <div class="block">
-            <h3>Source</h3>
-            <p><a href="${esc(e.source_url)}" target="_blank" rel="noreferrer">${esc(e.source_title || e.source_url)}</a></p>
-            <p class="small">${esc(e.source_type)}${e.date_if_available ? ` - ${esc(e.date_if_available)}` : ""}</p>
-            ${e.notes ? `<p class="small">Note: ${esc(e.notes)}</p>` : ""}
+            <h4>Buying behavior impact</h4>
+            <p>${esc(c.buying_behavior_impact)}</p>
+          </div>
+          <div class="block">
+            <h4>Source</h4>
+            <p><a href="${esc(c.source_url)}" target="_blank" rel="noreferrer">${esc(c.source_title || c.source_url)}</a></p>
+            <p>${esc(c.source_type)}${c.date_if_available ? ` - ${esc(c.date_if_available)}` : ""}</p>
+            ${c.notes ? `<p>Note: ${esc(c.notes)}</p>` : ""}
           </div>
         `;
       }
 
       async function init() {
         try {
-          const response = await fetch("./data/ai_commerce_examples.json");
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          payload = await response.json();
-          topFramingEl.textContent = payload.framing?.top_message || topFramingEl.textContent;
+          const res = await fetch("./data/ai_commerce_examples.json");
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          payload = await res.json();
+          heroTextEl.textContent = payload.framing?.top_message || heroTextEl.textContent;
           renderMetrics();
-          renderTabs();
-          renderSectionFrame();
+          renderStageTabs();
+          renderStageHeader();
           renderFilters();
           applyFilters();
-        } catch (err) {
-          detailEl.innerHTML = `<p>Could not load dataset. Run <code>python3 build_ai_commerce_report.py</code> and refresh.</p>`;
-          console.error(err);
+        } catch (e) {
+          detailPanelEl.innerHTML = `<p>Could not load <code>data/ai_commerce_examples.json</code>. Run <code>python3 build_ai_commerce_report.py</code> and refresh.</p>`;
+          console.error(e);
         }
       }
+
       init();
     </script>
   </body>
