@@ -6,15 +6,15 @@
     <title>AI Commerce Delegation Landscape</title>
     <style>
       :root {
-        --bg: #f4f7fb;
-        --ink: #10243e;
-        --muted: #5f7186;
-        --line: #d7e1ee;
-        --card: #ffffff;
-        --brand-1: #123b6b;
-        --brand-2: #1f5b98;
-        --brand-3: #eaf2fb;
-        --hover: #eef4fc;
+        --bg: #f6f8fc;
+        --paper: #ffffff;
+        --ink: #0f223c;
+        --muted: #5a6f86;
+        --line: #d8e2ef;
+        --blue-1: #123b6b;
+        --blue-2: #1f5b98;
+        --blue-3: #ecf3fb;
+        --blue-4: #e3eef9;
       }
       * {
         box-sizing: border-box;
@@ -26,101 +26,144 @@
         font-family: Georgia, "Times New Roman", serif;
       }
       .container {
-        max-width: 1280px;
+        max-width: 1320px;
         margin: 0 auto;
-        padding: 24px;
+        padding: 28px 24px 36px;
       }
       .hero {
-        background: linear-gradient(115deg, var(--brand-1), var(--brand-2));
-        border-radius: 14px;
+        background: linear-gradient(120deg, var(--blue-1), var(--blue-2));
         color: #fff;
-        padding: 28px;
+        border-radius: 14px;
+        padding: 30px;
       }
       .hero h1 {
         margin: 0;
-        font-size: 34px;
+        font-size: 36px;
         line-height: 1.2;
+        letter-spacing: 0.01em;
       }
       .hero p {
-        margin: 10px 0 0;
-        color: #e6eef8;
-        max-width: 980px;
+        margin: 12px 0 0;
+        max-width: 1020px;
+        color: #e4edf8;
         font-size: 17px;
-        line-height: 1.4;
+        line-height: 1.45;
       }
-      .metrics {
-        margin-top: 14px;
+      .stage-cards {
+        margin-top: 16px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        grid-template-columns: repeat(4, minmax(180px, 1fr));
         gap: 10px;
       }
-      .metric {
+      .stage-card {
         background: rgba(255, 255, 255, 0.12);
-        border: 1px solid rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.28);
         border-radius: 10px;
         padding: 10px 12px;
       }
-      .metric .k {
+      .stage-card h3 {
+        margin: 0;
+        font-size: 14px;
+        color: #fff;
+      }
+      .stage-card p {
+        margin: 6px 0 0;
         font-size: 12px;
-        color: #d9e6f5;
+        color: #dce8f7;
+        line-height: 1.35;
       }
-      .metric .v {
-        margin-top: 2px;
-        font-size: 21px;
-        font-weight: 700;
-      }
-      .stage-tabs {
+      .tabs {
         margin-top: 16px;
         display: flex;
-        gap: 8px;
         flex-wrap: wrap;
+        gap: 8px;
       }
-      .stage-tab {
+      .tab {
         border: 1px solid var(--line);
-        background: var(--card);
+        background: var(--paper);
         color: var(--ink);
         border-radius: 999px;
-        padding: 8px 12px;
+        padding: 9px 13px;
         font-size: 13px;
         cursor: pointer;
       }
-      .stage-tab.active,
-      .stage-tab:hover {
-        background: var(--brand-3);
+      .tab.active,
+      .tab:hover {
+        background: var(--blue-3);
       }
-      .stage-intro {
+      .editorial {
         margin-top: 12px;
+        background: var(--paper);
         border: 1px solid var(--line);
-        background: var(--card);
         border-radius: 12px;
-        padding: 14px 16px;
+        padding: 15px 16px;
       }
-      .stage-intro h2 {
+      .editorial h2 {
         margin: 0;
-        font-size: 22px;
+        font-size: 23px;
       }
-      .stage-intro p {
+      .editorial p {
         margin: 8px 0 0;
         color: var(--muted);
         line-height: 1.45;
       }
       .filters {
-        margin-top: 12px;
+        margin-top: 10px;
         display: flex;
-        gap: 8px;
         flex-wrap: wrap;
+        gap: 8px;
       }
       .filter {
         border: 1px solid var(--line);
+        background: var(--paper);
         border-radius: 999px;
-        background: var(--card);
-        padding: 6px 10px;
+        padding: 6px 11px;
         font-size: 12px;
         cursor: pointer;
       }
       .filter.active,
       .filter:hover {
-        background: var(--hover);
+        background: var(--blue-3);
+      }
+      .overall-wrap {
+        margin-top: 12px;
+      }
+      .overall-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      .overall-col {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+      .overall-col h3 {
+        margin: 0;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
+        background: #f8fbff;
+        font-size: 14px;
+      }
+      .overall-list {
+        padding: 8px;
+        max-height: 540px;
+        overflow: auto;
+      }
+      .overall-item {
+        margin-bottom: 7px;
+        border: 1px solid #e8eff8;
+        background: #fbfdff;
+        border-radius: 8px;
+        padding: 7px 8px;
+      }
+      .overall-item b {
+        display: block;
+        font-size: 13px;
+      }
+      .overall-item span {
+        font-size: 11px;
+        color: var(--muted);
       }
       .layout {
         margin-top: 12px;
@@ -129,14 +172,14 @@
         gap: 12px;
       }
       .panel {
+        background: var(--paper);
         border: 1px solid var(--line);
-        background: var(--card);
         border-radius: 12px;
         min-height: 620px;
       }
       .panel-head {
-        border-bottom: 1px solid var(--line);
         padding: 10px 12px;
+        border-bottom: 1px solid var(--line);
         color: var(--muted);
         font-size: 13px;
       }
@@ -144,51 +187,51 @@
         max-height: 760px;
         overflow: auto;
       }
-      .case-item {
+      .case {
         border-bottom: 1px solid #edf2f8;
         padding: 11px 12px;
         cursor: pointer;
       }
-      .case-item:hover {
-        background: var(--hover);
+      .case:hover {
+        background: var(--blue-3);
       }
-      .case-item.active {
-        background: var(--brand-3);
+      .case.active {
+        background: var(--blue-4);
       }
-      .case-item h3 {
+      .case h3 {
         margin: 0;
         font-size: 16px;
       }
-      .case-item p {
+      .case p {
         margin: 4px 0 0;
         color: var(--muted);
         font-size: 12px;
       }
       .detail {
-        padding: 16px;
+        padding: 16px 18px;
       }
       .detail h2 {
         margin: 0;
-        font-size: 30px;
+        font-size: 31px;
       }
       .detail .sub {
-        margin: 5px 0 10px;
-        color: var(--brand-1);
+        margin: 6px 0 10px;
         font-size: 18px;
+        color: var(--blue-1);
       }
       .badges {
         display: flex;
-        gap: 8px;
         flex-wrap: wrap;
+        gap: 8px;
         margin-bottom: 12px;
       }
       .badge {
-        border: 1px solid #c8d7ea;
+        border: 1px solid #c8d8eb;
         background: #f1f7fd;
-        color: #1a4872;
         border-radius: 999px;
-        padding: 3px 9px;
+        padding: 4px 9px;
         font-size: 11px;
+        color: #19476f;
         font-weight: 700;
       }
       .block {
@@ -205,37 +248,38 @@
         font-size: 15px;
       }
       a {
-        color: #1f4f80;
+        color: #1d4d80;
         text-decoration: none;
       }
       a:hover {
         text-decoration: underline;
       }
       footer {
-        margin-top: 12px;
+        margin-top: 13px;
         color: var(--muted);
         font-size: 12px;
       }
-      @media (max-width: 1024px) {
+      @media (max-width: 1120px) {
         .layout {
           grid-template-columns: 1fr;
         }
-        .metrics {
-          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        .overall-grid {
+          grid-template-columns: repeat(2, minmax(220px, 1fr));
         }
       }
-      @media (max-width: 640px) {
-        .metrics {
+      @media (max-width: 760px) {
+        .stage-cards,
+        .overall-grid {
           grid-template-columns: 1fr;
         }
       }
     </style>
-
+  
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-126</mso:_dlc_DocId>
-<mso:_dlc_DocIdItemGuid msdt:dt="string">9be7ee7d-aef3-4b2f-aa6b-d0334d8a6bfe</mso:_dlc_DocIdItemGuid>
-<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-126, 44VPN2QJSYTK-1298187675-126</mso:_dlc_DocIdUrl>
+<mso:_dlc_DocId msdt:dt="string">44VPN2QJSYTK-1298187675-141</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">4b0f933d-4745-472c-b30d-aeca072b08fd</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://mckinseyche.sharepoint.com/sites/spe-int-7n05ltpszj0hhj0bc/_layouts/15/DocIdRedir.aspx?ID=44VPN2QJSYTK-1298187675-141, 44VPN2QJSYTK-1298187675-141</mso:_dlc_DocIdUrl>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -244,21 +288,42 @@
       <section class="hero">
         <h1>AI Commerce Delegation Landscape</h1>
         <p id="heroText">
-          AI Commerce is evolving in four stages: advising and comparing, acting with permission, completing transactions, and managing purchases over time.
+          AI Commerce is evolving from recommendation interfaces into execution-capable agents. The strategic signal is delegation maturity: who does the work in each stage of the consumer journey.
         </p>
-        <div class="metrics" id="metrics"></div>
+        <div class="stage-cards">
+          <div class="stage-card">
+            <h3>1. Advises and compares</h3>
+            <p>AI reduces search and evaluation burden while consumers still execute actions.</p>
+          </div>
+          <div class="stage-card">
+            <h3>2. Acts with permission</h3>
+            <p>AI starts executing steps after explicit approval checkpoints.</p>
+          </div>
+          <div class="stage-card">
+            <h3>3. Completes transactions</h3>
+            <p>AI drives checkout or booking completion in transaction-ready flows.</p>
+          </div>
+          <div class="stage-card">
+            <h3>4. Manages purchases over time</h3>
+            <p>AI continuously optimizes recurring spend and post-purchase outcomes.</p>
+          </div>
+        </div>
       </section>
 
-      <div class="stage-tabs" id="stageTabs"></div>
+      <div class="tabs" id="tabs"></div>
 
-      <section class="stage-intro">
-        <h2 id="stageTitle">Loading stage...</h2>
-        <p id="stageIntro">Loading editorial intro...</p>
+      <section class="editorial">
+        <h2 id="panelTitle">Loading...</h2>
+        <p id="panelIntro">Loading editorial intro...</p>
       </section>
 
-      <div class="filters" id="filters"></div>
+      <div class="filters" id="geoFilters"></div>
 
-      <section class="layout">
+      <section id="overallSection" class="overall-wrap" style="display: none">
+        <div class="overall-grid" id="overallGrid"></div>
+      </section>
+
+      <section id="stageSection" class="layout">
         <aside class="panel">
           <div class="panel-head" id="listMeta">Loading examples...</div>
           <div class="case-list" id="caseList"></div>
@@ -276,26 +341,54 @@
     </div>
 
     <script>
-      const STAGES = {
-        advises_and_compares: "1. AI that advises and AI that compares",
-        acts_with_permission: "2. AI that acts with permission",
-        completes_transactions: "3. AI that completes transactions",
-        manages_purchases_over_time: "4. AI that manages purchases over time",
+      const STAGE_META = {
+        overall: {
+          label: "Overall",
+          intro:
+            "This cross-stage view shows how examples distribute across delegation maturity, from advisory support to ongoing managed optimization.",
+        },
+        advises_and_compares: {
+          label: "1. AI that advises and AI that compares",
+          intro:
+            "This stage matters because it scales faster than deeper autonomy. Consumers delegate research and comparison work while maintaining direct control over actions.",
+        },
+        acts_with_permission: {
+          label: "2. AI that acts with permission",
+          intro:
+            "This transition stage builds trust by introducing execution with explicit user checkpoints. It is where advisory AI becomes operationally useful.",
+        },
+        completes_transactions: {
+          label: "3. AI that completes transactions",
+          intro:
+            "Transaction-complete AI compresses the path from intent to purchase and is central to conversion impact in agentic commerce.",
+        },
+        manages_purchases_over_time: {
+          label: "4. AI that manages purchases over time",
+          intro:
+            "This is the most structurally disruptive stage because AI shifts from one-time conversion support to continuous spending and value optimization.",
+        },
       };
 
+      const STAGE_ORDER = [
+        "advises_and_compares",
+        "acts_with_permission",
+        "completes_transactions",
+        "manages_purchases_over_time",
+      ];
+
       let payload = null;
-      let activeStage = "advises_and_compares";
+      let activeTab = "overall";
       let activeGeo = "All geographies";
-      let activeSector = "All sectors";
-      let activeStatus = "All status";
       let visible = [];
       let selectedIndex = 0;
 
-      const metricsEl = document.getElementById("metrics");
-      const stageTabsEl = document.getElementById("stageTabs");
-      const stageTitleEl = document.getElementById("stageTitle");
-      const stageIntroEl = document.getElementById("stageIntro");
-      const filtersEl = document.getElementById("filters");
+      const tabsEl = document.getElementById("tabs");
+      const panelTitleEl = document.getElementById("panelTitle");
+      const panelIntroEl = document.getElementById("panelIntro");
+      const geoFiltersEl = document.getElementById("geoFilters");
+      const overallSectionEl = document.getElementById("overallSection");
+      const overallGridEl = document.getElementById("overallGrid");
+      const stageSectionEl = document.getElementById("stageSection");
       const listMetaEl = document.getElementById("listMeta");
       const caseListEl = document.getElementById("caseList");
       const detailPanelEl = document.getElementById("detailPanel");
@@ -309,112 +402,88 @@
 
       const uniq = (arr) => [...new Set(arr)].filter(Boolean);
 
-      function renderMetrics() {
-        const sum = payload.summary || {};
-        metricsEl.innerHTML = `
-          <div class="metric"><div class="k">Total examples</div><div class="v">${sum.total_examples || 0}</div></div>
-          <div class="metric"><div class="k">Stages</div><div class="v">${Object.keys(sum.stages || {}).length}</div></div>
-          <div class="metric"><div class="k">Live examples</div><div class="v">${sum.status_breakdown?.live || 0}</div></div>
-          <div class="metric"><div class="k">Geographies</div><div class="v">${(sum.geographies_covered || []).length}</div></div>
-        `;
-      }
-
-      function renderStageTabs() {
-        stageTabsEl.innerHTML = Object.entries(STAGES)
-          .map(
-            ([k, label]) =>
-              `<button class="stage-tab ${k === activeStage ? "active" : ""}" data-stage="${k}">${esc(label)}</button>`
-          )
+      function renderTabs() {
+        const keys = ["overall", ...STAGE_ORDER];
+        tabsEl.innerHTML = keys
+          .map((k) => `<button class="tab ${k === activeTab ? "active" : ""}" data-tab="${k}">${esc(STAGE_META[k].label)}</button>`)
           .join("");
-        stageTabsEl.querySelectorAll(".stage-tab").forEach((btn) => {
+        tabsEl.querySelectorAll(".tab").forEach((btn) => {
           btn.addEventListener("click", () => {
-            activeStage = btn.getAttribute("data-stage");
+            activeTab = btn.getAttribute("data-tab");
             selectedIndex = 0;
-            renderStageTabs();
-            renderStageHeader();
-            applyFilters();
+            renderTabs();
+            renderHeader();
+            renderGeoFilters();
+            renderPanel();
           });
         });
       }
 
-      function renderStageHeader() {
-        stageTitleEl.textContent = STAGES[activeStage];
-        stageIntroEl.textContent = payload.stage_intros?.[activeStage] || "";
+      function renderHeader() {
+        panelTitleEl.textContent = STAGE_META[activeTab].label;
+        panelIntroEl.textContent = STAGE_META[activeTab].intro;
       }
 
-      function renderFilters() {
-        const cases = payload.examples || [];
-        const geos = ["All geographies", ...uniq(cases.map((c) => c.geography))];
-        const sectors = ["All sectors", ...uniq(cases.map((c) => c.sector))];
-        const statuses = ["All status", ...uniq(cases.map((c) => c.status))];
-
-        const geoBtns = geos
-          .map((x) => `<button class="filter ${x === activeGeo ? "active" : ""}" data-geo="${esc(x)}">${esc(x)}</button>`)
+      function renderGeoFilters() {
+        const geos = ["All geographies", ...uniq((payload.examples || []).map((x) => x.geography))];
+        geoFiltersEl.innerHTML = geos
+          .map((g) => `<button class="filter ${g === activeGeo ? "active" : ""}" data-geo="${esc(g)}">${esc(g)}</button>`)
           .join("");
-        const sectorBtns = sectors
-          .map((x) => `<button class="filter ${x === activeSector ? "active" : ""}" data-sector="${esc(x)}">${esc(x)}</button>`)
-          .join("");
-        const statusBtns = statuses
-          .map((x) => `<button class="filter ${x === activeStatus ? "active" : ""}" data-status="${esc(x)}">${esc(x)}</button>`)
-          .join("");
-
-        filtersEl.innerHTML = `${geoBtns}${sectorBtns}${statusBtns}`;
-
-        filtersEl.querySelectorAll("[data-geo]").forEach((btn) => {
+        geoFiltersEl.querySelectorAll(".filter").forEach((btn) => {
           btn.addEventListener("click", () => {
             activeGeo = btn.getAttribute("data-geo");
             selectedIndex = 0;
-            renderFilters();
-            applyFilters();
-          });
-        });
-        filtersEl.querySelectorAll("[data-sector]").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            activeSector = btn.getAttribute("data-sector");
-            selectedIndex = 0;
-            renderFilters();
-            applyFilters();
-          });
-        });
-        filtersEl.querySelectorAll("[data-status]").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            activeStatus = btn.getAttribute("data-status");
-            selectedIndex = 0;
-            renderFilters();
-            applyFilters();
+            renderGeoFilters();
+            renderPanel();
           });
         });
       }
 
-      function applyFilters() {
-        visible = (payload.examples || []).filter((c) => {
-          if (c.stage_of_delegation !== activeStage) return false;
-          if (activeGeo !== "All geographies" && c.geography !== activeGeo) return false;
-          if (activeSector !== "All sectors" && c.sector !== activeSector) return false;
-          if (activeStatus !== "All status" && c.status !== activeStatus) return false;
-          return true;
-        });
-        renderCaseList();
-        renderDetail();
+      function filteredByGeo(arr) {
+        if (activeGeo === "All geographies") return arr;
+        return arr.filter((x) => x.geography === activeGeo);
+      }
+
+      function renderOverall() {
+        const all = filteredByGeo(payload.examples || []);
+        overallGridEl.innerHTML = STAGE_ORDER.map((stage) => {
+          const rows = all.filter((x) => x.stage_of_delegation === stage);
+          const items = rows
+            .map(
+              (r) => `
+                <div class="overall-item">
+                  <b>${esc(r.company)}</b>
+                  <span>${esc(r.product_or_agent_name)} - ${esc(r.geography)}</span>
+                </div>
+              `
+            )
+            .join("");
+          return `
+            <div class="overall-col">
+              <h3>${esc(STAGE_META[stage].label)}</h3>
+              <div class="overall-list">${items || "<div class='overall-item'><span>No examples in this geography filter.</span></div>"}</div>
+            </div>
+          `;
+        }).join("");
       }
 
       function renderCaseList() {
         listMetaEl.textContent = `${visible.length} examples in this stage`;
         if (!visible.length) {
-          caseListEl.innerHTML = `<div class="case-item"><p>No examples match the selected filters.</p></div>`;
+          caseListEl.innerHTML = `<div class="case"><p>No examples in this geography filter.</p></div>`;
           return;
         }
         caseListEl.innerHTML = visible
           .map(
             (c, i) => `
-              <div class="case-item ${i === selectedIndex ? "active" : ""}" data-idx="${i}">
+              <div class="case ${i === selectedIndex ? "active" : ""}" data-idx="${i}">
                 <h3>${esc(c.company)}</h3>
                 <p>${esc(c.product_or_agent_name)} - ${esc(c.market)} - ${esc(c.status)}</p>
               </div>
             `
           )
           .join("");
-        caseListEl.querySelectorAll(".case-item[data-idx]").forEach((el) => {
+        caseListEl.querySelectorAll(".case[data-idx]").forEach((el) => {
           el.addEventListener("click", () => {
             selectedIndex = Number(el.getAttribute("data-idx") || "0");
             renderCaseList();
@@ -433,39 +502,40 @@
           <h2>${esc(c.company)}</h2>
           <p class="sub">${esc(c.product_or_agent_name)}</p>
           <div class="badges">
-            <span class="badge">${esc(c.stage_of_delegation)}</span>
             <span class="badge">${esc(c.sector)}</span>
             <span class="badge">${esc(c.geography)}</span>
             <span class="badge">${esc(c.status.toUpperCase())}</span>
             <span class="badge">${esc(c.recurring_vs_non_recurring)}</span>
           </div>
-          <div class="block">
-            <h4>Concise Description</h4>
-            <p>${esc(c.concise_description)}</p>
-          </div>
-          <div class="block">
-            <h4>What the AI does</h4>
-            <p>${esc(c.what_the_ai_does)}</p>
-          </div>
-          <div class="block">
-            <h4>Customer task delegated</h4>
-            <p>${esc(c.consumer_task_delegated)}</p>
-          </div>
-          <div class="block">
-            <h4>Why this belongs in this stage</h4>
-            <p>${esc(c.why_this_stage)}</p>
-          </div>
-          <div class="block">
-            <h4>Buying behavior impact</h4>
-            <p>${esc(c.buying_behavior_impact)}</p>
-          </div>
+          <div class="block"><h4>Concise description</h4><p>${esc(c.concise_description)}</p></div>
+          <div class="block"><h4>What the AI does</h4><p>${esc(c.what_the_ai_does)}</p></div>
+          <div class="block"><h4>Customer task delegated</h4><p>${esc(c.consumer_task_delegated)}</p></div>
+          <div class="block"><h4>Why this stage</h4><p>${esc(c.why_this_stage)}</p></div>
+          <div class="block"><h4>Buying behavior impact</h4><p>${esc(c.buying_behavior_impact)}</p></div>
           <div class="block">
             <h4>Source</h4>
             <p><a href="${esc(c.source_url)}" target="_blank" rel="noreferrer">${esc(c.source_title || c.source_url)}</a></p>
             <p>${esc(c.source_type)}${c.date_if_available ? ` - ${esc(c.date_if_available)}` : ""}</p>
-            ${c.notes ? `<p>Note: ${esc(c.notes)}</p>` : ""}
           </div>
         `;
+      }
+
+      function renderStageView() {
+        visible = filteredByGeo((payload.examples || []).filter((x) => x.stage_of_delegation === activeTab));
+        renderCaseList();
+        renderDetail();
+      }
+
+      function renderPanel() {
+        if (activeTab === "overall") {
+          overallSectionEl.style.display = "block";
+          stageSectionEl.style.display = "none";
+          renderOverall();
+        } else {
+          overallSectionEl.style.display = "none";
+          stageSectionEl.style.display = "grid";
+          renderStageView();
+        }
       }
 
       async function init() {
@@ -474,17 +544,15 @@
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           payload = await res.json();
           heroTextEl.textContent = payload.framing?.top_message || heroTextEl.textContent;
-          renderMetrics();
-          renderStageTabs();
-          renderStageHeader();
-          renderFilters();
-          applyFilters();
-        } catch (e) {
+          renderTabs();
+          renderHeader();
+          renderGeoFilters();
+          renderPanel();
+        } catch (err) {
           detailPanelEl.innerHTML = `<p>Could not load <code>data/ai_commerce_examples.json</code>. Run <code>python3 build_ai_commerce_report.py</code> and refresh.</p>`;
-          console.error(e);
+          console.error(err);
         }
       }
-
       init();
     </script>
   </body>
