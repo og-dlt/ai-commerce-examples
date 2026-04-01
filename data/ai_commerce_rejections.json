@@ -1,7 +1,17 @@
 {
-  "generated_at_utc": "2026-04-01T14:46:35.417587+00:00",
-  "rejected_count": 3,
+  "generated_at_utc": "2026-04-01T15:02:18.374815+00:00",
+  "rejected_count": 5,
   "rejections": [
+    {
+      "company": "Deutsche Telekom Magenta AI",
+      "reason": "not cross-provider optimization",
+      "detail": "Primarily provider-owned assistant for own service ecosystem, not clear multi-provider comparison agent."
+    },
+    {
+      "company": "Walmart Sparky / Amazon Rufus / Wayfair Muse",
+      "reason": "not cross-provider optimization",
+      "detail": "Primarily merchant-owned assistants that optimize shopping within their own ecosystems."
+    },
     {
       "company": "Pinduoduo",
       "reason": "insufficient proof of agentic or commerce relevance",
