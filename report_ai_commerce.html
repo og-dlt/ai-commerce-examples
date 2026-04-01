@@ -46,26 +46,29 @@
         max-width: 900px;
         font-size: 17px;
       }
-      .stats {
+      .shifts {
         margin-top: 16px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
         gap: 10px;
       }
-      .stat {
-        padding: 10px 12px;
+      .shift {
+        padding: 12px 14px;
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.24);
       }
-      .stat .k {
-        font-size: 12px;
+      .shift .k {
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
         color: #dbe8f7;
       }
-      .stat .v {
-        margin-top: 2px;
-        font-size: 22px;
-        font-weight: 700;
+      .shift .v {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1.35;
+        color: #f4f8ff;
       }
       .controls {
         margin-top: 18px;
@@ -197,8 +200,8 @@
         .panel {
           min-height: auto;
         }
-        .stats {
-          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        .shifts {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -219,7 +222,7 @@
           Curated public-web examples across retail and consumer services, focused on
           agentic flows where AI helps people compare options, reduce costs, and complete commerce decisions.
         </p>
-        <div class="stats" id="stats"></div>
+        <div class="shifts" id="shifts"></div>
       </section>
 
       <div class="controls" id="filters"></div>
@@ -248,7 +251,7 @@
       let activeFilter = "All";
       let activeIndex = 0;
 
-      const statsEl = document.getElementById("stats");
+      const shiftsEl = document.getElementById("shifts");
       const filtersEl = document.getElementById("filters");
       const listMetaEl = document.getElementById("listMeta");
       const caseListEl = document.getElementById("caseList");
@@ -265,19 +268,34 @@
         return val.length > max ? `${val.slice(0, max - 1)}...` : val;
       };
 
-      function renderStats(payload) {
-        const total = payload.summary?.total_examples ?? allExamples.length;
-        const sectors = (payload.summary?.sectors_covered || []).length;
-        const live = payload.summary?.status_breakdown?.live ?? 0;
-        const pilotAnnounced =
-          (payload.summary?.status_breakdown?.pilot ?? 0) +
-          (payload.summary?.status_breakdown?.announced ?? 0) +
-          (payload.summary?.status_breakdown?.demo ?? 0);
-        statsEl.innerHTML = `
-          <div class="stat"><div class="k">Total examples</div><div class="v">${total}</div></div>
-          <div class="stat"><div class="k">Sectors covered</div><div class="v">${sectors}</div></div>
-          <div class="stat"><div class="k">Live</div><div class="v">${live}</div></div>
-          <div class="stat"><div class="k">Pilot / Announced</div><div class="v">${pilotAnnounced}</div></div>
+      function renderShifts(payload) {
+        const examples = payload.examples || [];
+        const shift1 = examples.filter((e) => {
+          const txt = `${e.what_the_agent_does_for_the_consumer} ${e.description}`.toLowerCase();
+          return txt.includes("checkout") || txt.includes("purchase") || txt.includes("book");
+        }).length;
+        const shift2 = examples.filter((e) => {
+          const txt = `${e.what_the_agent_does_for_the_consumer} ${e.description}`.toLowerCase();
+          return txt.includes("compare") || txt.includes("price") || txt.includes("recommend");
+        }).length;
+        const shift3 = examples.filter((e) => {
+          const txt = `${e.what_the_agent_does_for_the_consumer} ${e.description}`.toLowerCase();
+          return txt.includes("bill") || txt.includes("save") || txt.includes("negotiat");
+        }).length;
+
+        shiftsEl.innerHTML = `
+          <div class="shift">
+            <div class="k">Shift 1 - Decision to Transaction</div>
+            <div class="v">AI assistants are moving from advice to execution, with ${shift1} examples where users can advance directly into checkout or booking.</div>
+          </div>
+          <div class="shift">
+            <div class="k">Shift 2 - Conversational Comparison</div>
+            <div class="v">In ${shift2} cases, consumers compare products, offers, and providers via natural language instead of classic filter-and-search journeys.</div>
+          </div>
+          <div class="shift">
+            <div class="k">Shift 3 - Agentic Savings Behavior</div>
+            <div class="v">${shift3} examples show delegated cost reduction (bill negotiation, discount optimization, and price tracking) as a new buying habit.</div>
+          </div>
         `;
       }
 
@@ -390,7 +408,7 @@
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const payload = await response.json();
           allExamples = payload.examples || [];
-          renderStats(payload);
+          renderShifts(payload);
           renderFilters();
           applyFilter();
         } catch (error) {
